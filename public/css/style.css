@@ -1,12 +1,13 @@
+@charset "UTF-8";
 :root {
-  --orange: #E27D60;
+  --orange: $color_papaya;
   --background-transparent: transparent;
-  --background-grey: #e6e6e6;
-  --font-ligther: Work Sans
+  --background-grey: $color_gris;
+  --font-ligther: Work Sans ;
 }
 
 body {
-  --background-section-grey: #e6e6e6;
+  --background-section-grey: $color_gris;
   --background-section-transparent: transparent;
 }
 
@@ -19,7 +20,6 @@ p {
 }
 
 /*There is nothing better*/
-
 .container_flex {
   display: flex;
   justify-content: space-between;
@@ -38,7 +38,7 @@ h1 {
   padding-right: 70%;
 }
 
-h1>span {
+h1 span {
   color: var(--orange);
 }
 
@@ -70,12 +70,8 @@ h1>span {
 }
 
 /*Give us a visit.*/
-
 .background_color {
-  background: linear-gradient(to right,
-      var(--background-grey) 0%,
-      var(--background-grey) 50%,
-      var(--background-transparent) 50%);
+  background: linear-gradient(to right, var(--background-grey) 0%, var(--background-grey) 50%, var(--background-transparent) 50%);
 }
 
 .container {
@@ -88,10 +84,7 @@ h1>span {
   display: flex;
   padding: 60px 0;
   gap: 100px;
-  background: linear-gradient(to right,
-      var(--background-section-grey) 0%,
-      var(--background-section-grey) 76%,
-      var(--background-section-transparent) 76%);
+  background: linear-gradient(to right, var(--background-section-grey) 0%, var(--background-section-grey) 76%, var(--background-section-transparent) 76%);
 }
 
 .text_container {
@@ -132,7 +125,6 @@ h1>span {
 }
 
 /*It’s worth the time.*/
-
 .centrado_time {
   font-size: 16px;
   font-weight: lighter;
@@ -155,7 +147,7 @@ h1>span {
 .bold_title span {
   color: var(--orange);
   font-weight: bold;
-  font-size: 16px
+  font-size: 16px;
 }
 
 .font {
@@ -164,22 +156,15 @@ h1>span {
 }
 
 /*Widen your smile.*/
-
 .container_color_smile {
   display: flex;
   padding: 60px 0;
   gap: 100px;
-  background: linear-gradient(to left,
-      var(--background-section-grey) 0%,
-      var(--background-section-grey) 75%,
-      var(--background-section-transparent) 75%);
+  background: linear-gradient(to left, var(--background-section-grey) 0%, var(--background-section-grey) 75%, var(--background-section-transparent) 75%);
 }
 
 .background_color_smile {
-  background: linear-gradient(to left,
-      var(--background-grey) 0%,
-      var(--background-grey) 50%,
-      var(--background-transparent) 50%);
+  background: linear-gradient(to left, var(--background-grey) 0%, var(--background-grey) 50%, var(--background-transparent) 50%);
 }
 
 .center_box {
@@ -195,13 +180,11 @@ h1>span {
 }
 
 /*Treatments*/
-
 .gap_life {
   gap: 5px;
 }
 
 /*OUR TEAM*/
-
 .setting_p {
   padding: 0 230px;
   margin-bottom: 42px;
@@ -216,7 +199,7 @@ h1>span {
   width: fit-content;
   padding: 0px 7px;
   border-radius: 4px;
-  border: 0.10px solid lightgray;
+  border: 0.1px solid lightgray;
 }
 
 .box_white img {
@@ -235,7 +218,6 @@ h1>span {
 }
 
 /*Everyone deserves good health.*/
-
 .back_gray {
   background-color: var(--background-section-grey);
 }
@@ -310,7 +292,6 @@ h1>span {
 }
 
 /* Goods that would help you.*/
-
 .text_box span {
   color: var(--orange);
   font-weight: bold;
@@ -321,17 +302,15 @@ h1>span {
 }
 
 /*marcas*/
-
 .box_marcas {
   display: flex;
   justify-content: space-around;
 }
 
 /*Latest news.*/
-
 .border_cards {
   border-radius: 4px;
-  border: 0.10px solid lightgray;
+  border: 0.1px solid lightgray;
 }
 
 .card_info {
@@ -339,11 +318,11 @@ h1>span {
   position: relative;
   top: -24px;
   right: -75px;
-  background-color: white;
+  background-color: #fff;
   width: fit-content;
   padding: 0px 70px;
   border-radius: 4px;
-  border: 0.10px solid lightgray;
+  border: 0.1px solid lightgray;
 }
 
 .espacio_fecha img {
@@ -355,7 +334,7 @@ h1>span {
   padding-left: 30px;
 }
 
-.espacio_texto>h3 {
+.espacio_texto h3 {
   color: var(--orange);
 }
 
@@ -364,9 +343,8 @@ h1>span {
 }
 
 /*join*/
-
 .join__background {
-  background: url(../) no-repeat center;
+  background: url(../imghome/Rectangle_64.png) no-repeat center;
   background-size: cover;
 }
 
@@ -388,7 +366,7 @@ h1>span {
   color: #e27d60;
 }
 
-.join__text--container+div {
+.join__text--container + div {
   flex-basis: 770px;
 }
 
@@ -398,8 +376,10 @@ h1>span {
   margin-top: 55px;
 }
 
-.join__form input[type="email"] {
+.join__form input[type=email] {
   padding: 8px 1.875rem;
   margin-right: 30px;
   flex-grow: 1;
 }
+
+/*# sourceMappingURL=style.css.map */
