@@ -1,19 +1,25 @@
+$color_papaya: #E27D60;
+$color_papaya-light: #e8a87c;
+$color_negro: #303030;
+$color_claro2: #E6E6E6; 
+
+
 body {
-  --background-section-grey: #e6e6e6;
+  --background-section-grey: $color_claro2;
   --background-section-transparent: transparent;
-}
+} 
 
 .margin__bottom { margin-bottom: 100px !important; }
 
 h2,
 h1 {
   font-size: 2.25rem;
-  color: #e27d60;
+  color: $color_papaya;
 }
 
 .btn {
-  background-color: #303030;
-  color: #e6e6e6;
+  background-color: $color_negro;
+  color: $color_claro2;
   padding: 0.625rem 2.25rem;
   border-radius: 2px;
   font-weight: bold;
@@ -27,7 +33,7 @@ input[type="email"], input[type="text"] {
 
 input::placeholder {
   font-size: 1.125rem;
-  color: #292929;
+  color: $color_negro;
 }
 
 
@@ -46,15 +52,19 @@ input::placeholder {
   background-color: var(--background-section-grey);
 }
 
-.plan div {
+.plan{
+  div{
   width: fit-content;
   margin: auto;
   text-align: center;
+  }
 }
 
-.plan span {
-  font-size: 0.75rem;
-  color: #303030;
+.plan{
+  span{
+    font-size: 0.75rem;
+    color: $color_negro;
+  }
 }
 
 /*  Live a Healthy Life */
@@ -163,7 +173,7 @@ input::placeholder {
   flex-basis: 370px;
 }
 .ask__form--title {
-  color: #292929;
+  color: $color_negro;
   font-size: 1.25rem;
   margin-bottom: 30px;
 }
@@ -178,23 +188,25 @@ input::placeholder {
   padding: 0.75rem 1.25rem;
   box-sizing: border-box;
   border-radius: 3px;
-  border: 2px solid #e6e6e6;
+  border: 2px solid $color_claro2;
 }
 
 .ask__form input::placeholder {
-  color: #e6e6e6;
+  color: $color_claro2;
   font-size: 1rem;
 }
 
-.ask__form--container p {
-  max-width: 280px;
-  padding-left: 1.25rem;
-  font-size: 0.75rem;
-  background: url(../assets/images/our/email.svg) no-repeat;
-  margin: 10px 0 40px 0;
+.ask__form--container  {
+  p{
+    max-width: 280px;
+    padding-left: 1.25rem;
+    font-size: 0.75rem;
+    background: url(../assets/images/our/email.svg) no-repeat;
+    margin: 10px 0 40px 0;
+  }
 }
 .company {
-  color: #e27d60;
+  color: $color_papaya;
 }
 
 @media (max-width: 960px) {
