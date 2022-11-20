@@ -1,7 +1,13 @@
+$color_papaya: #E27D60;
+$color_papaya-light: #e8a87c;
+$color_negro: #303030;
+$color_claro2: #E6E6E6; 
+
+
 :root {
-  --orange: #E27D60;
+  --orange: $color_papaya;
   --background-transparent: transparent;
-  --background-grey: #e6e6e6;
+  --background-grey: $color_claro2;
 }
 
 /*general*/
@@ -29,8 +35,10 @@ span {
   background-color: var(--background-grey);
 }
 
-.container_color p{
-  font-size: 12px;
+.container_color {
+  p{
+    font-size: 12px;
+  }
 }
 
 .background_color {
@@ -60,9 +68,13 @@ span {
   height: 77px;
 }
 
-.setting-li>li>a {
-  letter-spacing: 2px;
-  color: white;
+.setting-li{
+  li{
+    a{
+      letter-spacing: 2px;
+      color: white;
+    }
+  }
 }
 
 .change:hover {
@@ -70,26 +82,32 @@ span {
   text-decoration: underline;
 }
 
-.setting-li img {
-  margin-left: 15px;
-  margin-right: 5px;
+.setting-li  {
+  img{
+    margin-left: 15px;
+    margin-right: 5px;
+  }
 }
 
 .main_hambur {
   align-self: center;
 }
 
-.espacio>img {
-  margin-bottom: 30px;
+.espacio{
+  img{
+    margin-bottom: 30px;
+  }
 }
 
 .setting_info {
   margin-left: 65px;
 }
 
-.setting_info>h3 {
+.setting_info {
+  h3{
   color: black;
   margin-top: 0px;
+  }
 }
 
 .setting_p {
@@ -99,7 +117,7 @@ span {
 
 .btn_orange {
   background-color: var(--orange);
-  color: #e6e6e6;
+  color: $color_claro2;
   padding: 6px 22px;
   font-weight: bold;
   font-size: 18px;
@@ -124,7 +142,7 @@ span {
 
 .btn_black {
   background-color: black;
-  color: #e6e6e6;
+  color: $color_claro2;
   padding: 6px 190px;
   font-weight: bold;
   font-size: 18px;
@@ -143,7 +161,7 @@ span {
 }
 
 .border_text {
-  border: 2px solid #E6E6E6;
+  border: 2px solid $color_claro2;
   padding: 30px 50px;
   margin-right: 20px;
   margin-top: 30px;
@@ -161,17 +179,23 @@ span {
   color: var(--orange);
 }
 
-.setting_cremas p {
-  font-size: 12px;
+.setting_cremas  {
+  p{
+    font-size: 12px;
+  }
 }
 
-.setting_cremas h4 {
-  font-size: 20px
+.setting_cremas  {
+  h4{
+    font-size: 20px
+  }
 }
 
-.setting_cremas span {
-  font-size: 16px;
-  font-weight: bold;
+.setting_cremas{
+  span{
+    font-size: 16px;
+    font-weight: bold;
+  }
 }
 
 .fondo {
@@ -179,12 +203,16 @@ span {
   background-size: cover;
 }
 
-.setting_form_text p {
-  color: white;
+.setting_form_text {
+  p{
+    color: white;
+  }
 }
 
-.setting_form_text h3 {
-  color: white;
+.setting_form_text {
+  h3{
+    color: white;
+  }
 }
 
 .setting_form_text {
@@ -204,7 +232,7 @@ span {
 
 .btn_gris {
   background-color: #303030;
-  color: #e6e6e6;
+  color: $color_claro2;
   padding: 0.625rem 2.25rem;
   border-radius: 2px;
   font-weight: bold;

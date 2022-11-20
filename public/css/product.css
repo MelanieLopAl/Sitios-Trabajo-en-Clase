@@ -1,7 +1,7 @@
 :root {
-  --orange: #E27D60;
+  --orange: $color_papaya;
   --background-transparent: transparent;
-  --background-grey: #e6e6e6;
+  --background-grey: $color_claro2;
 }
 
 /*general*/
@@ -29,15 +29,12 @@ span {
   background-color: var(--background-grey);
 }
 
-.container_color p{
+.container_color p {
   font-size: 12px;
 }
 
 .background_color {
-  background: linear-gradient(to left,
-      var(--background-grey) 0%,
-      var(--background-grey) 50%,
-      var(--background-transparent) 50%);
+  background: linear-gradient(to left, var(--background-grey) 0%, var(--background-grey) 50%, var(--background-transparent) 50%);
 }
 
 .margin__bottom {
@@ -60,7 +57,7 @@ span {
   height: 77px;
 }
 
-.setting-li>li>a {
+.setting-li li a {
   letter-spacing: 2px;
   color: white;
 }
@@ -79,7 +76,7 @@ span {
   align-self: center;
 }
 
-.espacio>img {
+.espacio img {
   margin-bottom: 30px;
 }
 
@@ -87,7 +84,7 @@ span {
   margin-left: 65px;
 }
 
-.setting_info>h3 {
+.setting_info h3 {
   color: black;
   margin-top: 0px;
 }
@@ -99,7 +96,7 @@ span {
 
 .btn_orange {
   background-color: var(--orange);
-  color: #e6e6e6;
+  color: #E6E6E6;
   padding: 6px 22px;
   font-weight: bold;
   font-size: 18px;
@@ -124,7 +121,7 @@ span {
 
 .btn_black {
   background-color: black;
-  color: #e6e6e6;
+  color: #E6E6E6;
   padding: 6px 190px;
   font-weight: bold;
   font-size: 18px;
@@ -166,7 +163,7 @@ span {
 }
 
 .setting_cremas h4 {
-  font-size: 20px
+  font-size: 20px;
 }
 
 .setting_cremas span {
@@ -198,13 +195,12 @@ span {
 }
 
 .setting_form_box {
-
   flex-basis: 570px;
 }
 
 .btn_gris {
   background-color: #303030;
-  color: #e6e6e6;
+  color: #E6E6E6;
   padding: 0.625rem 2.25rem;
   border-radius: 2px;
   font-weight: bold;
@@ -218,3 +214,5 @@ span {
   border-radius: 3px;
   margin-bottom: 10px;
 }
+
+/*# sourceMappingURL=product.css.map */

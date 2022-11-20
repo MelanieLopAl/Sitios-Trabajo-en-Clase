@@ -183,12 +183,14 @@ input::placeholder {
   gap: 20px;
 }
 
-.ask__form input {
-  width: 100%;
-  padding: 0.75rem 1.25rem;
-  box-sizing: border-box;
-  border-radius: 3px;
-  border: 2px solid $color_claro2;
+.ask__form{
+  input{
+    width: 100%;
+    padding: 0.75rem 1.25rem;
+    box-sizing: border-box;
+    border-radius: 3px;
+    border: 2px solid $color_claro2;
+  }
 }
 
 .ask__form input::placeholder {
